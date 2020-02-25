@@ -1,0 +1,7 @@
+.container-min-height{
+  min-height: 500px!important;
+}
+.router-view-padding{
+  padding: 5px 10px 10px 5px;
+}
+

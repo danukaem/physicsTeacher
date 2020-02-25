@@ -1,0 +1,11 @@
+.reset-password{
+  color: blue;
+}
+.reset-password:hover{
+  color: #3745ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-form{
+  padding: 10px;
+}

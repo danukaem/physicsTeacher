@@ -1,0 +1,10 @@
+.sideBar-width{
+  width: 90%;
+}
+
+
+@media (max-width: 992px){
+  .sideBar-width{
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,13 @@
+.product-see-details:hover{
+  color:blue;
+  cursor: pointer;
+}
+.product-more-images-box{
+  border: 1px solid black;
+}
+.product-more-images-box-margin{
+  padding: 2px;
+}
+.product-more-images-box-margin:hover{
+  cursor: pointer;
+}

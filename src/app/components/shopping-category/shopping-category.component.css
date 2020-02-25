@@ -1,0 +1,16 @@
+.scroll-description {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.add-to-cart-positioning {
+  position: absolute;
+  right:5%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.add-to-cart-positioning,.card-img-top:hover {
+  cursor: pointer;
+}
