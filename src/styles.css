@@ -1,10 +1,98 @@
-.text-align-right{
-  text-align: right;
+html, body {
+  height: 100%;
 }
 
-.text-align-left{
-  text-align: left;
+body .row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
-.align-items{
-  text-align: center;
+
+body .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (max-width: 992px) {
+  .web-view-responsive {
+    display: none !important;
+  }
+
+  .mobile-view-responsive {
+    display: block !important;
+  }
+}
+
+.web-view-responsive {
+  display: block;
+}
+
+.mobile-view-responsive {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  custom-col-1 {
+    display: inline-block;
+    width: 8.33% !important;
+  }
+
+  custom-col-2 {
+    display: inline-block;
+    width: 16.66% !important;
+  }
+
+  custom-col-3 {
+    display: inline-block;
+    width: 25% !important;
+  }
+
+  custom-col-4 {
+    display: inline-block;
+    width: 33.3% !important;
+  }
+
+  custom-col-5 {
+    display: inline-block;
+    width: 41.66% !important;
+  }
+
+  custom-col-6 {
+    display: inline-block;
+    width: 50% !important;
+  }
+
+  custom-col-7 {
+    display: inline-block;
+    width: 58.33% !important;
+  }
+
+  custom-col-8 {
+    display: inline-block;
+    width: 66.66% !important;
+  }
+
+  custom-col-9 {
+    display: inline-block;
+    width: 75% !important;
+  }
+
+  custom-col-10 {
+    display: inline-block;
+    width: 83.33% !important;
+  }
+
+  custom-col-11 {
+    display: inline-block;
+    width: 91.66% !important;
+  }
+
+  custom-col-12 {
+    display: inline-block;
+    width: 100% !important;
+  }
+
+}
+
+@media (min-width: 993px) {
+
 }

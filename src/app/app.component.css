@@ -1,7 +1,24 @@
-.container-min-height{
-  min-height: 500px!important;
+.app-top-nav-bar{
+  padding: 15px;
+  background: rgba(148, 65, 255, 0.84);
+  width: 100%;
+  text-align: center;
+  height: fit-content;
+  font-size: 30px;
+  font-weight: bolder;
 }
-.router-view-padding{
-  padding: 5px 10px 10px 5px;
+.content-div{
+  text-align: center;
+  min-height: 80%;
 }
+.app-footer{
+  height: fit-content;
+  width: 100%;
+  background: rgba(148, 65, 255, 0.84);
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
 
