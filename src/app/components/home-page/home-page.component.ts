@@ -46,4 +46,13 @@ export class HomePageComponent implements OnInit {
 
     });
   }
+
+  viewQuestion(n: any) {
+    console.log('event -------------------------------------', n);
+  }
+
+  viewAnswer(n: any) {
+    console.log('event -------------------------------------', n);
+
+  }
 }

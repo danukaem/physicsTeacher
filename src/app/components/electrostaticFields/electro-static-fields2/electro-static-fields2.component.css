@@ -9,7 +9,9 @@
   height: 100%;
 }
 .home-page-div{
-  background-color: black
+  background-color: black;
+  color: white;
+
 }
 
 .topic-div{

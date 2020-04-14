@@ -1,0 +1,11 @@
+.temporary-construction-text{
+  font-size: 60px;
+  color: red;
+}
+
+@media (max-width: 992px) {
+  .temporary-construction-text{
+    font-size: 14px;
+  }
+
+}

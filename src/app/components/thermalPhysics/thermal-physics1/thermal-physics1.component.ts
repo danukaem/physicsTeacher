@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-thermal-physics1',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThermalPhysics1Component implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

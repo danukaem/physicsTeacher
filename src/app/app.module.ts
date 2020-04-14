@@ -99,6 +99,8 @@ import { Radiation1Component } from './components/radiation/radiation1/radiation
 import { Radiation2Component } from './components/radiation/radiation2/radiation2.component';
 import { Radiation3Component } from './components/radiation/radiation3/radiation3.component';
 import { Radiation4Component } from './components/radiation/radiation4/radiation4.component';
+import { TempararyContentComponent } from './components/temparary-content/temparary-content.component';
+import {NgxSmartModalModule} from 'ngx-smart-modal';
 
 @NgModule({
   declarations: [
@@ -197,13 +199,15 @@ import { Radiation4Component } from './components/radiation/radiation4/radiation
     Radiation1Component,
     Radiation2Component,
     Radiation3Component,
-    Radiation4Component
+    Radiation4Component,
+    TempararyContentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxSmartModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
