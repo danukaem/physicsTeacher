@@ -103,7 +103,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'signUp', component: SignupComponent},
   {
-    path: 'mechanics', component: HomePageComponent,
+    path: 'mechanics',
     children: [
       {path: 'page1', component: Mechanics1Component},
       {path: 'page2', component: Mechanics2Component},

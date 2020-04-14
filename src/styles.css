@@ -1,3 +1,5 @@
+@import "~ngx-smart-modal/ngx-smart-modal.css";
+@import "app/common.css";
 html, body {
   height: 100%;
 }
@@ -115,4 +117,12 @@ body .container-fluid {
 
 .topic-div{
   text-align: center !important;
+}
+
+.nsm-dialog{
+  max-width: 1000px ;
+}
+.nsm-content{
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
 }

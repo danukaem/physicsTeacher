@@ -10,6 +10,8 @@
 <div class="home-page-div ">
   <!--<app-temparary-content></app-temparary-content>-->
 
+  <!--<img src="../../../../assets/electrical/question/eq1.jpg" alt="">-->
+  <!--<img src="../../../../assets/electrical/answer/ea1.jpg" alt="">-->
   <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-12">
       <div class="iframe-content-div">
@@ -18,6 +20,10 @@
                 allowfullscreen></iframe>
 
       </div>
+      <div class="button-padding-div">
+      <button type="button" class="btn btn-primary" (click)="openModelImage(1,'question')">view question</button>
+      <button type="button" class="btn btn-success" (click)="openModelImage(1,'answer')">view answer</button>
+    </div>
       <label>වෝල්ටීයතා බෙදීම</label>
 
     </div>
@@ -28,7 +34,11 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
       </div>
-      <label>kirchhoff</label>
+      <div class="button-padding-div">
+        <button type="button" class="btn btn-primary" (click)="openModelImage(2,'question')">view question</button>
+        <button type="button" class="btn btn-success" (click)="openModelImage(2,'answer')">view answer</button>
+      </div>
+      <label>කචෝෆ් නියම </label>
 
     </div>
 
@@ -38,6 +48,10 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
+      </div>
+      <div class="button-padding-div">
+        <button type="button" class="btn btn-primary" (click)="openModelImage(3,'question')">view question</button>
+        <button type="button" class="btn btn-success" (click)="openModelImage(3,'answer')">view answer</button>
       </div>
       <label>විශාල වෝල්ටීයතා මැනීම සඳහා වෝල්ට්මීටරය පරිවර්තනය</label>
 
@@ -49,6 +63,10 @@
                 allowfullscreen></iframe>
 
       </div>
+      <div class="button-padding-div">
+        <button type="button" class="btn btn-primary" (click)="openModelImage(4,'question')">view question</button>
+        <button type="button" class="btn btn-success" (click)="openModelImage(4,'answer')">view answer</button>
+      </div>
       <label>විශාල ධාරාවක් මැනීම සඳහා ඇමිටරය පරිවර්තනය</label>
 
     </div>
@@ -56,3 +74,12 @@
 
   </div>
 </div>
+<ngx-smart-modal #myModal identifier="myModal">
+  <h1>{{modelTitle}}</h1>
+  <div *ngFor="let imgUrl of imageUrls">
+    <img src={{imgUrl}} alt="" style="width: 100%; height: 100%;">
+    <br>
+  </div>
+
+  <button (click)="myModal.close()">Close</button>
+</ngx-smart-modal>

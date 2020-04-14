@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {NgxSmartModalService} from 'ngx-smart-modal';
 
 @Component({
   selector: 'app-home-page',
@@ -10,25 +11,27 @@ export class HomePageComponent implements OnInit {
   userNames: string[];
   inText: string;
   getMessageDemo: string;
+  imageUrls: string[] = [];
+  modelTitle: any;
 
-  // http: HttpClient;
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    public ngxSmartModalService: NgxSmartModalService
   ) {
 
   }
 
   ngOnInit() {
-    const headers = new HttpHeaders({Authorization: 'Basic ' + btoa('user' + ':' + 'password')});
-    this.http.get<any>('http://localhost:8080/getUsers', {observe: 'response', headers}).subscribe(response => {
-      this.userNames = response.body;
-      console.log('user names--------------  ', response.body);
-
-    }, error1 => {
-      console.log('user names--------------  error list ');
-
-    });
+    // const headers = new HttpHeaders({Authorization: 'Basic ' + btoa('user' + ':' + 'password')});
+    // this.http.get<any>('http://localhost:8080/getUsers', {observe: 'response', headers}).subscribe(response => {
+    //   this.userNames = response.body;
+    //   console.log('user names--------------  ', response.body);
+    //
+    // }, error1 => {
+    //   console.log('user names--------------  error list ');
+    //
+    // });
 
   }
 
@@ -38,21 +41,47 @@ export class HomePageComponent implements OnInit {
 
   getMessage() {
     const headers = new HttpHeaders({Authorization: 'Basic ' + btoa('user' + ':' + 'password')});
-    this.http.get<any>('http://demosiriweb.us-east-2.elasticbeanstalk.com/hello', {observe: 'response', headers}).subscribe(response => {
-      this.getMessageDemo = response.body;
-
-    }, error1 => {
-      console.log('getMessage--------------  error list ');
-
-    });
+    // this.http.get<any>('http://demosiriweb.us-east-2.elasticbeanstalk.com/hello', {observe: 'response', headers}).subscribe(response => {
+    //   this.getMessageDemo = response.body;
+    //
+    // }, error1 => {
+    //   console.log('getMessage--------------  error list ');
+    //
+    // });
   }
 
-  viewQuestion(n: any) {
-    console.log('event -------------------------------------', n);
-  }
 
-  viewAnswer(n: any) {
-    console.log('event -------------------------------------', n);
+  openModelImage(n, qa) {
+    this.imageUrls = [];
 
+    this.ngxSmartModalService.getModal('myModal').open();
+    if (qa === 'question') {
+      this.modelTitle = 'Question';
+      switch (n) {
+        case  1: {
+          this.imageUrls.push('../../../assets/physics2.jpg');
+          break;
+        }
+        case  2: {
+          this.imageUrls.push('../../../assets/physics2.jpg');
+          break;
+
+        }
+      }
+    } else {
+      this.modelTitle = 'Answer';
+      switch (n) {
+        case  1: {
+          this.imageUrls.push('../../../assets/physics3.jpg');
+          break;
+        }
+        case  2: {
+          this.imageUrls.push('../../../assets/physics3.jpg');
+          break;
+
+        }
+      }
+    }
+    console.log('--------------------------------', this.imageUrls);
   }
 }

@@ -16,6 +16,10 @@
                 allowfullscreen></iframe>
 
       </div>
+      <div class="button-padding-div">
+        <button type="button" class="btn btn-primary" (click)="openModelImage(1,'question')">view question</button>
+        <button type="button" class="btn btn-success" (click)="openModelImage(1,'answer')">view answer</button>
+      </div>
       <label>kirchhoff නීතිය - question 1</label>
 
     </div>
@@ -23,3 +27,13 @@
 
   </div>
 </div>
+
+<ngx-smart-modal #myModal identifier="myModal">
+  <h1>{{modelTitle}}</h1>
+  <div *ngFor="let imgUrl of imageUrls">
+    <img src={{imgUrl}} alt="" style="width: 100%; height: 100%;">
+    <br>
+  </div>
+
+  <button (click)="myModal.close()">Close</button>
+</ngx-smart-modal>
