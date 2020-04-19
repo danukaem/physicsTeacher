@@ -94,6 +94,10 @@ import {ThermalPhysics6Component} from './components/thermalPhysics/thermal-phys
 import {ThermalPhysics7Component} from './components/thermalPhysics/thermal-physics7/thermal-physics7.component';
 import {ThermalPhysics8Component} from './components/thermalPhysics/thermal-physics8/thermal-physics8.component';
 import {ThermalPhysics9Component} from './components/thermalPhysics/thermal-physics9/thermal-physics9.component';
+import {ElectronicsDiodeComponent} from './components/electronics/theory/electronics-diode/electronics-diode.component';
+import {ElectronicsTransistorComponent} from './components/electronics/theory/electronics-transistor/electronics-transistor.component';
+import {ElectronicsICComponent} from './components/electronics/theory/electronics-ic/electronics-ic.component';
+import {ElectronicsGateComponent} from './components/electronics/theory/electronics-gate/electronics-gate.component';
 
 
 const routes: Routes = [
@@ -150,6 +154,15 @@ const routes: Routes = [
       {path: 'page3', component: Electronics3Component},
       {path: 'page4', component: Electronics4Component},
       {path: 'page5', component: Electronics5Component}
+    ]
+  },
+  {
+    path: 'electronicsTheory',
+    children: [
+      {path: 'diode', component: ElectronicsDiodeComponent},
+      {path: 'transistor', component: ElectronicsTransistorComponent},
+      {path: 'ic', component: ElectronicsICComponent},
+      {path: 'gate', component: ElectronicsGateComponent},
     ]
   },
   {

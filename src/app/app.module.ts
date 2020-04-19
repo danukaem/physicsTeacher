@@ -101,6 +101,10 @@ import { Radiation3Component } from './components/radiation/radiation3/radiation
 import { Radiation4Component } from './components/radiation/radiation4/radiation4.component';
 import { TempararyContentComponent } from './components/temparary-content/temparary-content.component';
 import {NgxSmartModalModule} from 'ngx-smart-modal';
+import { ElectronicsDiodeComponent } from './components/electronics/theory/electronics-diode/electronics-diode.component';
+import { ElectronicsTransistorComponent } from './components/electronics/theory/electronics-transistor/electronics-transistor.component';
+import { ElectronicsICComponent } from './components/electronics/theory/electronics-ic/electronics-ic.component';
+import { ElectronicsGateComponent } from './components/electronics/theory/electronics-gate/electronics-gate.component';
 
 @NgModule({
   declarations: [
@@ -200,7 +204,11 @@ import {NgxSmartModalModule} from 'ngx-smart-modal';
     Radiation2Component,
     Radiation3Component,
     Radiation4Component,
-    TempararyContentComponent
+    TempararyContentComponent,
+    ElectronicsDiodeComponent,
+    ElectronicsTransistorComponent,
+    ElectronicsICComponent,
+    ElectronicsGateComponent
   ],
   imports: [
     BrowserModule,

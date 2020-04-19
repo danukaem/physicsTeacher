@@ -3,7 +3,15 @@
   margin-right: 5px;
 
 }
-.button-padding-div{
+
+.button-padding-div {
   background: unset !important;
   border: unset !important;
 }
+
+@media (max-width: 992px) {
+  .topic-div h3 b {
+    font-size: 14px;
+  }
+}
+
