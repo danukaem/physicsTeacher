@@ -98,6 +98,9 @@ import {ElectronicsDiodeComponent} from './components/electronics/theory/electro
 import {ElectronicsTransistorComponent} from './components/electronics/theory/electronics-transistor/electronics-transistor.component';
 import {ElectronicsICComponent} from './components/electronics/theory/electronics-ic/electronics-ic.component';
 import {ElectronicsGateComponent} from './components/electronics/theory/electronics-gate/electronics-gate.component';
+import {Mcq2019Component} from './components/pastPapers/2019AL/mcq2019/mcq2019.component';
+import {SEssay2019Component} from './components/pastPapers/2019AL/s-essay2019/s-essay2019.component';
+import {Essay2019Component} from './components/pastPapers/2019AL/essay2019/essay2019.component';
 
 
 const routes: Routes = [
@@ -258,6 +261,14 @@ const routes: Routes = [
       {path: 'page7', component: ThermalPhysics7Component},
       {path: 'page8', component: ThermalPhysics8Component},
       {path: 'page9', component: ThermalPhysics9Component}
+    ]
+  },
+  {
+    path: 'pastPapers',
+    children: [
+      {path: 'mcq2019', component: Mcq2019Component},
+      {path: 'sEssay2019', component: SEssay2019Component},
+      {path: 'essay2019', component: Essay2019Component},
     ]
   },
   {path: '**', component: HomePageComponent}

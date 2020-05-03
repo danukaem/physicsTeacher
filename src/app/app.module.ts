@@ -105,6 +105,9 @@ import { ElectronicsDiodeComponent } from './components/electronics/theory/elect
 import { ElectronicsTransistorComponent } from './components/electronics/theory/electronics-transistor/electronics-transistor.component';
 import { ElectronicsICComponent } from './components/electronics/theory/electronics-ic/electronics-ic.component';
 import { ElectronicsGateComponent } from './components/electronics/theory/electronics-gate/electronics-gate.component';
+import { Mcq2019Component } from './components/pastPapers/2019AL/mcq2019/mcq2019.component';
+import { SEssay2019Component } from './components/pastPapers/2019AL/s-essay2019/s-essay2019.component';
+import { Essay2019Component } from './components/pastPapers/2019AL/essay2019/essay2019.component';
 
 @NgModule({
   declarations: [
@@ -208,7 +211,10 @@ import { ElectronicsGateComponent } from './components/electronics/theory/electr
     ElectronicsDiodeComponent,
     ElectronicsTransistorComponent,
     ElectronicsICComponent,
-    ElectronicsGateComponent
+    ElectronicsGateComponent,
+    Mcq2019Component,
+    SEssay2019Component,
+    Essay2019Component
   ],
   imports: [
     BrowserModule,
