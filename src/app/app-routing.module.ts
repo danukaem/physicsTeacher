@@ -101,6 +101,7 @@ import {ElectronicsGateComponent} from './components/electronics/theory/electron
 import {Mcq2019Component} from './components/pastPapers/2019AL/mcq2019/mcq2019.component';
 import {SEssay2019Component} from './components/pastPapers/2019AL/s-essay2019/s-essay2019.component';
 import {Essay2019Component} from './components/pastPapers/2019AL/essay2019/essay2019.component';
+import {MeasurementInstrumentsComponent} from './components/measurements/theory/measurement-instruments/measurement-instruments.component';
 
 
 const routes: Routes = [
@@ -230,6 +231,13 @@ const routes: Routes = [
     path: 'measurement',
     children: [
       {path: 'page1', component: Measurement1Component}
+    ]
+  }
+  ,
+  {
+    path: 'measurementTheory',
+    children: [
+      {path: 'instruments', component: MeasurementInstrumentsComponent},
     ]
   },
   {

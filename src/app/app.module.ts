@@ -108,6 +108,7 @@ import { ElectronicsGateComponent } from './components/electronics/theory/electr
 import { Mcq2019Component } from './components/pastPapers/2019AL/mcq2019/mcq2019.component';
 import { SEssay2019Component } from './components/pastPapers/2019AL/s-essay2019/s-essay2019.component';
 import { Essay2019Component } from './components/pastPapers/2019AL/essay2019/essay2019.component';
+import { MeasurementInstrumentsComponent } from './components/measurements/theory/measurement-instruments/measurement-instruments.component';
 
 @NgModule({
   declarations: [
@@ -214,7 +215,8 @@ import { Essay2019Component } from './components/pastPapers/2019AL/essay2019/ess
     ElectronicsGateComponent,
     Mcq2019Component,
     SEssay2019Component,
-    Essay2019Component
+    Essay2019Component,
+    MeasurementInstrumentsComponent
   ],
   imports: [
     BrowserModule,
