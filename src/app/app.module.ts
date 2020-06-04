@@ -109,6 +109,13 @@ import { Mcq2019Component } from './components/pastPapers/2019AL/mcq2019/mcq2019
 import { SEssay2019Component } from './components/pastPapers/2019AL/s-essay2019/s-essay2019.component';
 import { Essay2019Component } from './components/pastPapers/2019AL/essay2019/essay2019.component';
 import { MeasurementInstrumentsComponent } from './components/measurements/theory/measurement-instruments/measurement-instruments.component';
+import { TheoryComponent } from './components/home-page/home-page-expand/theory/theory.component';
+import { Grade12QuestionDiscussionComponent } from './components/home-page/home-page-expand/grade12-question-discussion/grade12-question-discussion.component';
+import { Grade13QuestionDiscussionComponent } from './components/home-page/home-page-expand/grade13-question-discussion/grade13-question-discussion.component';
+import { PaperDiscussionComponent } from './components/home-page/home-page-expand/paper-discussion/paper-discussion.component';
+import { PastPapersDownloadComponent } from './components/home-page/home-page-expand/past-papers-download/past-papers-download.component';
+import { SyllabusComponent } from './components/home-page/home-page-expand/syllabus/syllabus.component';
+import { SpecialQustionComponent } from './components/home-page/home-page-expand/special-qustion/special-qustion.component';
 
 @NgModule({
   declarations: [
@@ -216,7 +223,14 @@ import { MeasurementInstrumentsComponent } from './components/measurements/theor
     Mcq2019Component,
     SEssay2019Component,
     Essay2019Component,
-    MeasurementInstrumentsComponent
+    MeasurementInstrumentsComponent,
+    TheoryComponent,
+    Grade12QuestionDiscussionComponent,
+    Grade13QuestionDiscussionComponent,
+    PaperDiscussionComponent,
+    PastPapersDownloadComponent,
+    SyllabusComponent,
+    SpecialQustionComponent
   ],
   imports: [
     BrowserModule,
@@ -228,4 +242,6 @@ import { MeasurementInstrumentsComponent } from './components/measurements/theor
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  static resourceBaseURL = 'http://localhost:8080/';
+}

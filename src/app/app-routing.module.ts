@@ -102,6 +102,13 @@ import {Mcq2019Component} from './components/pastPapers/2019AL/mcq2019/mcq2019.c
 import {SEssay2019Component} from './components/pastPapers/2019AL/s-essay2019/s-essay2019.component';
 import {Essay2019Component} from './components/pastPapers/2019AL/essay2019/essay2019.component';
 import {MeasurementInstrumentsComponent} from './components/measurements/theory/measurement-instruments/measurement-instruments.component';
+import {Grade12QuestionDiscussionComponent} from './components/home-page/home-page-expand/grade12-question-discussion/grade12-question-discussion.component';
+import {Grade13QuestionDiscussionComponent} from './components/home-page/home-page-expand/grade13-question-discussion/grade13-question-discussion.component';
+import {TheoryComponent} from './components/home-page/home-page-expand/theory/theory.component';
+import {PaperDiscussionComponent} from './components/home-page/home-page-expand/paper-discussion/paper-discussion.component';
+import {PastPapersDownloadComponent} from './components/home-page/home-page-expand/past-papers-download/past-papers-download.component';
+import {SyllabusComponent} from './components/home-page/home-page-expand/syllabus/syllabus.component';
+import {SpecialQustionComponent} from './components/home-page/home-page-expand/special-qustion/special-qustion.component';
 
 
 const routes: Routes = [
@@ -277,6 +284,18 @@ const routes: Routes = [
       {path: 'mcq2019', component: Mcq2019Component},
       {path: 'sEssay2019', component: SEssay2019Component},
       {path: 'essay2019', component: Essay2019Component},
+    ]
+  },
+  {
+    path: 'homePageExpand',
+    children: [
+      {path: 'theoryPage', component: TheoryComponent},
+      {path: 'grade12QuestionPage', component: Grade12QuestionDiscussionComponent},
+      {path: 'grade13QuestionPage', component: Grade13QuestionDiscussionComponent},
+      {path: 'paperDiscussionPage', component: PaperDiscussionComponent},
+      {path: 'paperDownloadPage', component: PastPapersDownloadComponent},
+      {path: 'syllabusPage', component: SyllabusComponent},
+      {path: 'specialQuestionPage', component: SpecialQustionComponent},
     ]
   },
   {path: '**', component: HomePageComponent}
