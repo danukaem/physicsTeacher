@@ -8,13 +8,21 @@
   background: unset !important;
   border: unset !important;
 }
+.menu-bar-home-page{
+  text-decoration:none !important;
+}
+.menu-bar-home-page {
+  color: white;
+}
+.menu-bar-home-page :hover {
+  color: yellow;
+}
 
 @media (max-width: 992px) {
   .topic-div h3 b {
     font-size: 14px;
   }
 }
-
 
 .home-page-card-div {
   padding: 20px;
@@ -26,15 +34,33 @@
 }
 
 .bg-sub {
-  background-color: #8a59ad !important;
+  background-color: #a346ff !important;
 }
-.card-body{
+
+.card-body {
   text-align: left;
 }
-.card-body a:hover{
+
+.card-body a:hover {
   cursor: pointer;
   color: black !important;
 }
-.home-page-card-div .card-body a{
-  color: white ;
+
+.home-page-card-div .card-body a {
+  color: white;
+}
+
+.home-page-card-div .card {
+  min-width: 25%;
+}
+
+@media (max-width: 778px ) {
+  .home-page-card-div .card {
+    display: inline-block;
+    margin: 5%;
+  }
+
+  .home-page-card-div .card {
+    min-width: 86%;
+  }
 }
